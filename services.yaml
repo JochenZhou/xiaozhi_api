@@ -1,0 +1,121 @@
+send_chat_message:
+  name: Send Chat Message
+  description: Send a chat message to the device
+  fields:
+    device_id:
+      name: Device ID
+      description: Device MAC address
+      required: true
+      selector:
+        text:
+    message:
+      name: Message
+      description: Message to send
+      required: true
+      selector:
+        text:
+
+play_music:
+  name: Play Music
+  description: Search and play music
+  fields:
+    device_id:
+      name: Device ID
+      description: Device MAC address
+      required: true
+      selector:
+        text:
+    keywords:
+      name: Keywords
+      description: Song name or artist
+      required: true
+      selector:
+        text:
+
+set_volume:
+  name: Set Volume
+  description: Set device volume
+  fields:
+    device_id:
+      name: Device ID
+      description: Device MAC address
+      required: true
+      selector:
+        text:
+    volume:
+      name: Volume
+      description: Volume value (0-100)
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 100
+          step: 1
+
+set_brightness:
+  name: Set Brightness
+  description: Set device brightness
+  fields:
+    device_id:
+      name: Device ID
+      description: Device MAC address
+      required: true
+      selector:
+        text:
+    brightness:
+      name: Brightness
+      description: Brightness value (0-100)
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 100
+          step: 1
+
+set_player_mode:
+  name: Set Player Mode
+  description: Set music player mode
+  fields:
+    device_id:
+      name: Device ID
+      description: Device MAC address
+      required: true
+      selector:
+        text:
+    mode:
+      name: Mode
+      description: Player mode
+      required: true
+      selector:
+        select:
+          options:
+            - label: "Sequence"
+              value: "sequence"
+            - label: "Random"
+              value: "random"
+            - label: "List Loop"
+              value: "list_loop"
+            - label: "Single Loop"
+              value: "single_loop"
+
+set_theme:
+  name: Set Theme
+  description: Set device theme
+  fields:
+    device_id:
+      name: Device ID
+      description: Device MAC address
+      required: true
+      selector:
+        text:
+    theme:
+      name: Theme
+      description: Theme (light/dark)
+      required: true
+      selector:
+        select:
+          options:
+            - label: "Light"
+              value: "light"
+            - label: "Dark"
+              value: "dark"

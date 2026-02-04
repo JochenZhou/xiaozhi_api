@@ -1,0 +1,150 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "添加小智设备",
+                "description": "配置小智设备远程控制API",
+                "data": {
+                    "api_url": "API地址",
+                    "api_key": "API密钥",
+                    "device_id": "设备MAC地址",
+                    "device_name": "设备名称（可选）"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "无法连接到API服务器，请检查地址和密钥",
+            "invalid_auth": "认证失败，请检查API密钥",
+            "unknown": "未知错误"
+        },
+        "abort": {
+            "already_configured": "该设备已配置"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "配置选项",
+                "data": {
+                    "api_url": "API地址",
+                    "api_key": "API密钥"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "idle": {
+                "name": "待机"
+            },
+            "stop_music": {
+                "name": "停止播放"
+            },
+            "resume_music": {
+                "name": "恢复播放"
+            },
+            "next_track": {
+                "name": "下一曲"
+            },
+            "previous_track": {
+                "name": "上一曲"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "音量"
+            },
+            "brightness": {
+                "name": "亮度"
+            }
+        },
+        "select": {
+            "player_mode": {
+                "name": "播放模式",
+                "state": {
+                    "sequence": "顺序播放",
+                    "random": "随机播放",
+                    "list_loop": "列表循环",
+                    "single_loop": "单曲循环"
+                }
+            },
+            "theme": {
+                "name": "主题",
+                "state": {
+                    "light": "浅色",
+                    "dark": "深色"
+                }
+            }
+        },
+        "text": {
+            "chat_message": {
+                "name": "发送消息"
+            },
+            "play_music": {
+                "name": "播放音乐"
+            }
+        }
+    },
+    "services": {
+        "send_chat_message": {
+            "name": "发送聊天消息",
+            "description": "向设备发送聊天消息",
+            "fields": {
+                "message": {
+                    "name": "消息内容",
+                    "description": "要发送的消息"
+                }
+            }
+        },
+        "play_music": {
+            "name": "播放音乐",
+            "description": "搜索并播放音乐",
+            "fields": {
+                "keywords": {
+                    "name": "关键词",
+                    "description": "歌曲名称或歌手"
+                }
+            }
+        },
+        "set_volume": {
+            "name": "设置音量",
+            "description": "设置设备音量",
+            "fields": {
+                "volume": {
+                    "name": "音量",
+                    "description": "音量值（0-100）"
+                }
+            }
+        },
+        "set_brightness": {
+            "name": "设置亮度",
+            "description": "设置设备亮度",
+            "fields": {
+                "brightness": {
+                    "name": "亮度",
+                    "description": "亮度值（0-100）"
+                }
+            }
+        },
+        "set_player_mode": {
+            "name": "设置播放模式",
+            "description": "设置音乐播放模式",
+            "fields": {
+                "mode": {
+                    "name": "模式",
+                    "description": "播放模式"
+                }
+            }
+        },
+        "set_theme": {
+            "name": "设置主题",
+            "description": "设置设备主题",
+            "fields": {
+                "theme": {
+                    "name": "主题",
+                    "description": "主题（light/dark）"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Add Xiaozhi Device",
+                "description": "Configure Xiaozhi device remote control API",
+                "data": {
+                    "api_url": "API URL",
+                    "api_key": "API Key",
+                    "device_id": "Device MAC Address",
+                    "device_name": "Device Name (optional)"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Cannot connect to API server, please check URL and key",
+            "invalid_auth": "Authentication failed, please check API key",
+            "unknown": "Unknown error"
+        },
+        "abort": {
+            "already_configured": "Device already configured"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "Options",
+                "data": {
+                    "api_url": "API URL",
+                    "api_key": "API Key"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "idle": {
+                "name": "Idle"
+            },
+            "stop_music": {
+                "name": "Stop Music"
+            },
+            "resume_music": {
+                "name": "Resume Music"
+            },
+            "next_track": {
+                "name": "Next Track"
+            },
+            "previous_track": {
+                "name": "Previous Track"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "Volume"
+            },
+            "brightness": {
+                "name": "Brightness"
+            }
+        },
+        "select": {
+            "player_mode": {
+                "name": "Player Mode",
+                "state": {
+                    "sequence": "Sequence",
+                    "random": "Random",
+                    "list_loop": "List Loop",
+                    "single_loop": "Single Loop"
+                }
+            },
+            "theme": {
+                "name": "Theme",
+                "state": {
+                    "light": "Light",
+                    "dark": "Dark"
+                }
+            }
+        },
+        "text": {
+            "chat_message": {
+                "name": "Send Message"
+            },
+            "play_music": {
+                "name": "Play Music"
+            }
+        }
+    },
+    "services": {
+        "send_chat_message": {
+            "name": "Send Chat Message",
+            "description": "Send a chat message to the device",
+            "fields": {
+                "message": {
+                    "name": "Message",
+                    "description": "Message to send"
+                }
+            }
+        },
+        "play_music": {
+            "name": "Play Music",
+            "description": "Search and play music",
+            "fields": {
+                "keywords": {
+                    "name": "Keywords",
+                    "description": "Song name or artist"
+                }
+            }
+        },
+        "set_volume": {
+            "name": "Set Volume",
+            "description": "Set device volume",
+            "fields": {
+                "volume": {
+                    "name": "Volume",
+                    "description": "Volume value (0-100)"
+                }
+            }
+        },
+        "set_brightness": {
+            "name": "Set Brightness",
+            "description": "Set device brightness",
+            "fields": {
+                "brightness": {
+                    "name": "Brightness",
+                    "description": "Brightness value (0-100)"
+                }
+            }
+        },
+        "set_player_mode": {
+            "name": "Set Player Mode",
+            "description": "Set music player mode",
+            "fields": {
+                "mode": {
+                    "name": "Mode",
+                    "description": "Player mode"
+                }
+            }
+        },
+        "set_theme": {
+            "name": "Set Theme",
+            "description": "Set device theme",
+            "fields": {
+                "theme": {
+                    "name": "Theme",
+                    "description": "Theme (light/dark)"
+                }
+            }
+        }
+    }
+}

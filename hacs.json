@@ -1,0 +1,5 @@
+{
+  "name": "小智设备远程控制",
+  "render_readme": true,
+  "homeassistant": "2023.1.0"
+}
