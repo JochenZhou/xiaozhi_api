@@ -1,6 +1,7 @@
 # 小智设备远程控制 (Xiaozhi API)
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=JochenZhou&repository=xiaozhi_api&category=integration)
 
 Home Assistant 自定义集成，用于远程控制小智系列智能设备。
 
@@ -24,7 +25,13 @@ Home Assistant 自定义集成，用于远程控制小智系列智能设备。
 
 ## 安装
 
-### HACS 安装（推荐）
+### HACS 一键安装（推荐）
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=JochenZhou&repository=xiaozhi_api&category=integration)
+
+点击上方按钮，自动跳转到 HACS 添加此集成。
+
+### HACS 手动添加
 
 1. 打开 HACS
 2. 点击右上角三个点，选择 **自定义存储库**
